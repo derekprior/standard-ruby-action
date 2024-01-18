@@ -1,10 +1,16 @@
 #!/bin/sh
 
 set -e
+ehco "[info] starting run"
 
 CMD="standardrb --parallel -f github"
+echo "[info] CMD before: '$CMD'"
+echo "[info] GITHUB_WORKSPACE: '$GITHUB_WORKSPACE'"
+echo "[info] pwd: `pwd`"
 
 cd "$GITHUB_WORKSPACE"
+
+echo "[info] pwd: `pwd`"
 
 if [ "$USE_BUNDLE_VERSION" = "true" ]; then
   echo "[info] using bundled version"
