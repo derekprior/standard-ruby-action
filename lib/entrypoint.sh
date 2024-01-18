@@ -1,7 +1,7 @@
 #!/bin/sh
 
 set -e
-ehco "[info] starting run"
+echo "[info] starting run"
 
 CMD="standardrb --parallel -f github"
 echo "[info] CMD before: '$CMD'"
